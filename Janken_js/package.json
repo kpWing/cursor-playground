@@ -1,0 +1,21 @@
+{
+  "name": "janken-game",
+  "version": "1.0.0",
+  "description": "Webブラウザで実行できるジャンケンゲーム",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 6601 -a 0.0.0.0",
+    "dev": "http-server -p 6601 -a 0.0.0.0"
+  },
+  "keywords": [
+    "janken",
+    "game",
+    "rock-paper-scissors"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
