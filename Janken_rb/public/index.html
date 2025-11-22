@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ジャンケンゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🪨 ジャンケンゲーム ✂️</h1>
+        </header>
+
+        <div class="game-area">
+            <div class="score-board">
+                <div class="score-item">
+                    <div class="score-label">あなた</div>
+                    <div class="score-value" id="player-score">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label">コンピューター</div>
+                    <div class="score-value" id="computer-score">0</div>
+                </div>
+            </div>
+
+            <div class="choices">
+                <div class="choice-section">
+                    <h2>あなたの選択</h2>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-choice="rock" id="rock-btn">
+                            <span class="emoji">🪨</span>
+                            <span class="label">グー</span>
+                        </button>
+                        <button class="choice-btn" data-choice="scissors" id="scissors-btn">
+                            <span class="emoji">✂️</span>
+                            <span class="label">チョキ</span>
+                        </button>
+                        <button class="choice-btn" data-choice="paper" id="paper-btn">
+                            <span class="emoji">📄</span>
+                            <span class="label">パー</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="result-section">
+                    <div class="result-display">
+                        <div class="player-choice" id="player-choice-display">
+                            <div class="choice-emoji">?</div>
+                            <div class="choice-name">あなた</div>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="computer-choice" id="computer-choice-display">
+                            <div class="choice-emoji">?</div>
+                            <div class="choice-name">コンピューター</div>
+                        </div>
+                    </div>
+                    <div class="result-message" id="result-message">
+                        選択してください
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="reset-btn" id="reset-btn">リセット</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="janken.js"></script>
+</body>
+</html>
+
